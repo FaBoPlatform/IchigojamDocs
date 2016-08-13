@@ -1,9 +1,9 @@
-FaBo IchigoJam
+FaBo Starter Kit for IchigoJam 導入マニュアル
 =======
 
 # 本ドキュメントについて
 
-IoT入門者向けのプログラム学習用のドキュメントになっています。
+FaBo Starter Kit for IchigoJam用のチュートリアルです。
 
 # 対象レベル
 
@@ -15,7 +15,7 @@ Basic
 
 # 使用ハード
 
-FaBo
+[FaBo Starter Kit for IchigoJam](http://www.fabo.io/004.html)
 
 
 Powered by [FaBo](http://www.fabo.io)
