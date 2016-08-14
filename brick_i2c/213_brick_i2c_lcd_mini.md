@@ -13,11 +13,6 @@ I2Cコネクタへ接続します。
 
 ![](/img/200_i2c/connect/213_lcdmini_connect.jpg)
 
-## Support
-|Arduino|IchigoJam|
-|:--:|:--:|
-|◯|◯|
-
 ## AQM0802A Datasheet
 | Document |
 | -- |
@@ -31,21 +26,9 @@ I2Cコネクタへ接続します。
 ## Schematic
 ![](/img/200_i2c/schematic/213_lcd_mini.png)
 
-## Library
-### for Arduino
-- [Arduino IDEからインストール](http://fabo.io/library_install.html)
-
-  ライブラリ名：「FaBo 213 LCD mini AQM0802A」
-
-- [Library GitHub](https://github.com/FaBoPlatform/FaBoLCDmini-AQM0802A-Library)
-- [Library Document](http://fabo.io/doxygen/FaBoLCDmini-AQM0802A-Library)
-
 ## Sample Code
-### for Arduino
-上記のArduino Libraryをインストールし、スケッチの例、「FaBo 213 LCD mini AQM0802A」からお選びください。
-
-### for Ichigojam
 I2CコネクタにLCD mini I2C Brickを接続し、LCD上に文字を表示させます。
+
 ```
 10 'LCD INIT
 20 CLS
@@ -79,7 +62,7 @@ I2CコネクタにLCD mini I2C Brickを接続し、LCD上に文字を表示さ�
 730 return
 ```
 
-## Parts
+## 構成Parts
 - AQM0802A
 
 ## GitHub
