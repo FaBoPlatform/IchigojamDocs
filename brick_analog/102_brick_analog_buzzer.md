@@ -7,70 +7,19 @@
 圧電ブザーを使ったBrickです。I/Oピンより、鳴らす音や音の長さを制御することができます。
 
 ## Connecting
-### Arduino
-アナログコネクタ(A0〜A5)、またはデジタルコネクタ(2〜13)のいずれかに接続します。
 
-![](/img/100_analog/connect/102_buzzer_connect.jpg)
-
-## Support
-|Arduino|IchigoJam|
-|:--:|:--:|
-|◯|◯|
+OUTコネクタのいずれかに接続します。
 
 ## Schematic
 ![](/img/100_analog/schematic/102_buzzer.png)
 
 ## Sample Code
-### for Arduino
-D2コネクタにBuzzer Brickを接続し、ビープ音を鳴らしています。
-```c
-//
-// FaBo Brick Sample
-//
-// #102 Buzzer Brick
-//
 
-#define buzzerPin 2 // ブザーピンの設定
-
-int duration = 500; // 音を鳴らす時間
-
-void setup() {
-  // ブザーピンを出力用に設定
-  pinMode(buzzerPin,OUTPUT);
-}
-
-void loop() {
-  tone(buzzerPin,262,duration); // ド
-  delay(duration);
-
-  tone(buzzerPin,294,duration); // レ
-  delay(duration);
-
-  tone(buzzerPin,330,duration); // ミ
-  delay(duration);
-
-  delay(1000);
-}
-```
-tone関数にて出力できる音階と周波数は下記のようになります。
-<br>
-数値が大きくなるほど音が高くなります。
-
-| | ド | ド♯ | レ | レ♯ | ミ | ファ | ファ♯ | ソ | ソ♯ | ラ | ラ♯ | シ |
-|  -- | -- |-- | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
-|  1 | 131 | 139 | 147 | 156 | 165 | 175 | 185 | 196 | 208 | 220 | 233 | 247 |
-| 2 | 262 | 277 | 294 | 311 | 330 | 349 | 370 | 392 | 415 | 440 | 466 | 494 |
- | 3 | 523 | 554 | 587 | 622 | 659 | 698 | 740 | 784 | 831 | 880 | 932 | 988 |
-
-その他の音階については下記をご参照下さい。
-
-https://www.arduino.cc/en/Tutorial/ToneMelody?from=Tutorial.Tone
-
-### for IchigoJam
 シールドのSOUNDコネクタにBUZZER Brickを接続する。
 - ビープ音を鳴らします。
 
 BEEP
+
 ```
 100 BEEP
 ```
@@ -135,38 +84,7 @@ C16 = 16分音符のド
 詳しくは下記のURLを参照してください。<br>
 ####福野泰介の一日一創 <br>http://fukuno.jig.jp/892
 
-### for Cylon.js
-
-```js
-var Cylon = require('cylon');
-var melodys = [131,147,165,175,196,220,247];
-
-Cylon.robot({
-
-        connections: {
-                arduino: { adaptor: 'firmata', port: '/dev/tty.usbmodem1411' }
-        },
-
-        devices: {
-                buzzor: { driver: 'direct-pin', pin: 11},
-        },
-
-        work: function(my) {
-                var i = 0;
-                var tones = 1 / (2 * 131) ;
-                every((tones).second(), function() {
-                        if(i % 2 == 0){
-                                my.buzzor.digitalWrite(1024);
-                        }else{
-                                my.buzzor.digitalWrite(0);
-                        }
-                        i++;
-                });
-        }
-}).start();
-```
-
-## Parts
+## 構成Parts
 - 圧電ブザー
 
 ## GitHub

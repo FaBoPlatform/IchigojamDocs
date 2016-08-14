@@ -1,4 +1,6 @@
-# #115 Humidity Brick
+# #115 Humidity Brick(非対応)
+
+本製品はIchigoJamには非対応です。
 
 <center>![](/img/100_analog/product/115.jpg)
 <!--COLORME-->
@@ -8,16 +10,6 @@
 
 温度、湿度の情報を取得することができます。
 
-## Connecting
-### Arduino
-アナログコネクタ(A0〜A5)のいずれかに接続します。
-
-![](/img/100_analog/connect/115_humidity_connect.jpg)
-
-## Support
-|Arduino|
-|:--:|
-|◯|
 
 ## Parts Specification
 | Document |
@@ -26,51 +18,6 @@
 
 ## Schematic
 ![](/img/100_analog/schematic/115_humidity.png)
-
-## Sample Code
-### for Arduino
-A0コネクタに接続して、湿度を計測するサンプルになります。
-
-このサンプルコードでは外部ライブラリを使用します。
-
-- [GitHub Library](https://github.com/adafruit/DHT-sensor-library)
-
-- [Arduino IDEからインストール](http://fabo.io/library_install.html)
-
-  ライブラリ名：「DHT sensor library」
-
-```c
-//
-// FaBo Brick Sample
-//
-// #115 Humidity Brick
-//
-// DHT Library Downloads
-// https://github.com/adafruit/DHT-sensor-library
-
-#include "DHT.h"
-DHT dht(A0, DHT11);
-
-void setup() {
-  Serial.begin(9600);
-  dht.begin();
-}
-
-void loop() {
-
-  delay(1000);
-
-  float h = dht.readHumidity();
-  float t = dht.readTemperature();
-
-  Serial.print("Hum: ");
-  Serial.print(h);
-  Serial.print(" %");
-  Serial.print("  Temp: ");
-  Serial.print(t);
-  Serial.println(" *C");
-}
-```
 
 
 ## Parts

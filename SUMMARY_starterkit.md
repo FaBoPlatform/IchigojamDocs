@@ -1,13 +1,11 @@
 # Summary
 
 * [はじめに](README.md)
-* [Arduinoについて](dev/README.md)
-    * [ArduinoIDEのインストール](dev/install.md)
-    * [Out/Inシールドの接続方法](dev/connect_shield.md)
-    * [#501 OUT/IN Shield for Arduino](outin/501_shield_outin_arduino.md)
-    * [FaBoライブラリインストール](dev/install_library.md)
+* [IchigoJam](dev/ichigojam.md)
+    * [導入](dev/ichigojam_junbi.md)
+    * [#503 OUT/IN Shield for IchigoJam](503_shield_outin_ichigojam.md)
 * [FaBoについて](fabo/README.md)
-    * [Starter Kit for Arduino](fabo/002_starterkit_arduino.md)
+    * [Starter Kit for Ichigojam](004_starterkit_ichigojam.md)
 * [Analog Brick](brick_analog/analog_brick.md)
     * [#101 LED Brick](brick_analog/101_brick_analog_led.md)
     * [#103 Button Brick](brick_analog/103_brick_analog_button.md)
