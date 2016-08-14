@@ -55,4 +55,4 @@
     * [#1502 Matrix Plate Kit](kit_kaden/1502_kit_matrix_plate.md)
     * [#1504 RemoteController Kit](kit_kaden/1504_kit_remotecontroller.md)
 * Case
-    * [#1101 Case UNO](case/1101_case_arduino_uno.md)
+    * [#1101 Case UNO](case/1105_ichigojam.md)
