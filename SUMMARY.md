@@ -1,10 +1,3 @@
-# Summary
-
-* [TOP](README.md)
-
-### 環境設定
-
-* [Arduino](dev/README.md)
 
 * [はじめに](README.md)
 * [IchigoJam](dev/ichigojam.md)
