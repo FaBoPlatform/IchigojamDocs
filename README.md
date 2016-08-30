@@ -1,6 +1,8 @@
 FaBo IchigoJam
 =======
 
+![](/img/title_ichigo.png)
+
 # 本ドキュメントについて
 
 IoT入門者向けのプログラム学習用のドキュメントになっています。

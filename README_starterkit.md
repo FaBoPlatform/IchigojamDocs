@@ -1,6 +1,8 @@
 FaBo Starter Kit for IchigoJam 導入マニュアル
 =======
 
+![](/img/title_ichigo_starter.png)
+
 # 本ドキュメントについて
 
 FaBo Starter Kit for IchigoJam用のチュートリアルです。
